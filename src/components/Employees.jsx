@@ -1,7 +1,7 @@
 import Employee from "./Employee";
 
 const Employees = () => {
-    const data = [
+    const jsonData = [
         {id :1, name: 'Mark', email: 'mark@gmail.com'},
         {id :2, name: 'Clerk', email: 'c@gmail.com'},
         {id :3, name: 'John', email: 'j@gmail.com'},
@@ -24,7 +24,7 @@ const Employees = () => {
            </thead>
            <tbody>
             {
-               data.map((emp) => <Employee key = {emp.id}  data={ emp } />)
+               jsonData.map((emp) => <Employee key = {emp.id}  data={ emp } />)
             }
            </tbody>
            </table>
