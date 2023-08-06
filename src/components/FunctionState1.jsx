@@ -12,14 +12,14 @@ const Header = () => {
     email : "guest@gmail.com"
   })
 
-  const onClickHandler = () => {     // here we can use regular function also(events)  in functional component like onClickHandler(){--------}
-    /* setFirstName("john");
-    setEmail("john@gmail.com"); */
-
+  const onClickHandler = () => {     // here we can use regular function also(events)  in functional component like onClickHandler(){--------} 
+     /* setFirstName("john");
+    setEmail("john@gmail.com"); 
+ */
     setUser({
-        ...user,   //if we used the spread operator, it keeps the firstname same and overrides the remaining properties means paul,john@gmail.com
+        ...user,   //if we used the spread operator, it keeps the firstname same and overrides the remaining properties means paul,guest@gmail.com 
         firstName: 'Paul',
-       // email: 'Paul@gmail.com'
+        //email: 'Paul@gmail.com'
     })
   };
 
